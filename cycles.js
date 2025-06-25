@@ -14,7 +14,22 @@ while (i <= 100) {
   i++;
 }
 
-console.log(sum)
+console.log('Сумма чисел от 1 до 100: ', sum)
 
 // 3.*Выведи в консоль все простые числа от 0 до 100.
 
+
+let n = 1;
+
+while (n < 100) {
+  n += 1;
+  let count = 0;
+  for (let i = 1; i < n + 1; i++) {
+    if (n % i == 0) {
+      count += 1;
+    }
+  }
+  if (count == 2) {
+    console.log(n)
+  }  
+}
